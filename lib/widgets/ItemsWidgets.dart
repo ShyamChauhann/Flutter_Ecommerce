@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ecommerce_app/pages/CartPage.dart';
 
 class ItemsWidget extends StatelessWidget {
   @override
@@ -19,86 +20,90 @@ class ItemsWidget extends StatelessWidget {
               color: Colors.white,
               borderRadius: BorderRadius.circular(20),
             ),
-            child: Column(
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Container(
-                      padding: EdgeInsets.all(5),
-                      decoration: BoxDecoration(
-                        color: Color(0xFF4C53A5),
-                        borderRadius: BorderRadius.circular(20),
-                      ),
-                      child: Text(
-                        "-50%",
-                        style: TextStyle(
-                          fontSize: 14,
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
-                    Icon(
-                      Icons.favorite_border,
-                      color: Colors.red,
-                    ),
-                  ],
-                ),
-                InkWell(
-                  onTap: () {},
-                  child: Container(
-                    margin: EdgeInsets.all(10),
-                    child: Image.asset(
-                      "images/$i.png",
-                      height: 120,
-                      width: 120,
-                    ),
-                  ),
-                ),
-                Container(
-                  padding: EdgeInsets.only(bottom: 8),
-                  alignment: Alignment.centerLeft,
-                  child: Text(
-                    "Product Title",
-                    style: TextStyle(
-                      fontSize: 18,
-                      color: Color(0xFF4C53A5),
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ),
-                Container(
-                  alignment: Alignment.centerLeft,
-                  child: Text(
-                    "Write description of product",
-                    style: TextStyle(
-                      fontSize: 15,
-                      color: Color(0xFF4C53A5),
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsets.symmetric(vertical: 10),
-                  child: Row(
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(
-                        "\%55",
-                        style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
+                      Container(
+                        padding: EdgeInsets.all(5),
+                        decoration: BoxDecoration(
                           color: Color(0xFF4C53A5),
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                        child: Text(
+                          "-50%",
+                          style: TextStyle(
+                            fontSize: 14,
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                       ),
                       Icon(
-                        Icons.shopping_cart_checkout,
-                        color: Color(0xFF4C53A5),
+                        Icons.favorite_border,
+                        color: Colors.red,
                       ),
                     ],
                   ),
-                ),
-              ],
+                  InkWell(
+                    onTap: () {
+                      // Navigator.push(context, "cartPage");
+                    },
+                    child: Container(
+                      margin: EdgeInsets.all(10),
+                      child: Image.asset(
+                        "images/$i.png",
+                        height: 100,
+                        width: 100,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    padding: EdgeInsets.only(bottom: 8),
+                    alignment: Alignment.centerLeft,
+                    child: Text(
+                      "Product Title",
+                      style: TextStyle(
+                        fontSize: 18,
+                        color: Color(0xFF4C53A5),
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    alignment: Alignment.centerLeft,
+                    child: Text(
+                      "Write description of product",
+                      style: TextStyle(
+                        fontSize: 15,
+                        color: Color(0xFF4C53A5),
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.symmetric(vertical: 10),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "\%55",
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                            color: Color(0xFF4C53A5),
+                          ),
+                        ),
+                        Icon(
+                          Icons.shopping_cart_checkout,
+                          color: Color(0xFF4C53A5),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
       ],
