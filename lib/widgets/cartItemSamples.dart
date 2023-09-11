@@ -1,4 +1,4 @@
-import 'dart:ui';
+// import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -28,7 +28,7 @@ class cartItemSamples extends StatelessWidget {
                   height: 70,
                   width: 70,
                   margin: EdgeInsets.only(right: 15),
-                  child: Image.asset("images/i.png"),
+                  child: Image.asset("images/$i.png"),
                 ),
                 Padding(
                   padding: EdgeInsets.symmetric(vertical: 10),

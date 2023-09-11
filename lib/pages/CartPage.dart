@@ -1,8 +1,6 @@
 import 'package:ecommerce_app/widgets/CartAppBar.dart';
 import 'package:ecommerce_app/widgets/CartBottomNavBar.dart';
 import 'package:ecommerce_app/widgets/cartItemSamples.dart';
-
-// import 'package:flutter/rendering.dart';
 import 'package:flutter/material.dart';
 
 class CartPage extends StatelessWidget {
@@ -16,7 +14,7 @@ class CartPage extends StatelessWidget {
             height: 700,
             padding: EdgeInsets.only(top: 15),
             decoration: BoxDecoration(
-              color: Color(0xffedecf2),
+              color: Color(0xFFEDECF2),
               borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(35),
                 topRight: Radius.circular(35),
@@ -53,7 +51,7 @@ class CartPage extends StatelessWidget {
                             fontSize: 16,
                           ),
                         ),
-                      )
+                      ),
                     ],
                   ),
                 ),
