@@ -33,6 +33,7 @@ class ItemAppBar extends StatelessWidget {
           Icon(
             Icons.favorite,
             size: 30,
+            color: Colors.red,
           ),
         ],
       ),
