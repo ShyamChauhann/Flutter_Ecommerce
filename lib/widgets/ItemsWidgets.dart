@@ -12,13 +12,12 @@ class ItemsWidget extends StatelessWidget {
       crossAxisCount: 2,
       shrinkWrap: true,
       children: [
-        for (int i = 1; i < 8; i++)
+        for (int i = 1; i < 13; i++)
           Container(
             padding: EdgeInsets.only(left: 15, right: 15, top: 10),
             margin: EdgeInsets.symmetric(vertical: 8, horizontal: 10),
             decoration: BoxDecoration(
               color: Colors.white,
-              
               borderRadius: BorderRadius.circular(20),
             ),
             child: SingleChildScrollView(

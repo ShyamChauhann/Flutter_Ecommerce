@@ -179,7 +179,7 @@ class ItemPage extends StatelessWidget {
                                   child: Text(
                                     i.toString(),
                                     style: TextStyle(
-                                      fontSize: 18,
+                                      fontSize: 15,
                                       fontWeight: FontWeight.bold,
                                       color: Color(0xff4c53a5),
                                     ),
@@ -209,8 +209,8 @@ class ItemPage extends StatelessWidget {
                             children: [
                               for (int i = 0; i < 5; i++)
                                 Container(
-                                  height: 30,
-                                  width: 30,
+                                  height: 60,
+                                  width: 50,
                                   alignment: Alignment.center,
                                   margin: EdgeInsets.symmetric(horizontal: 5),
                                   decoration: BoxDecoration(
