@@ -100,7 +100,7 @@ class HomePage extends StatelessWidget {
       bottomNavigationBar: CurvedNavigationBar(
         backgroundColor: Colors.transparent,
         onTap: (index) {},
-        height: 70,
+        height: 55,
         color: Color(0xFF4C53A5),
         items: [
           Icon(
