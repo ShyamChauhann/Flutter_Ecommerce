@@ -15,7 +15,7 @@ class HomePage extends StatelessWidget {
         children: [
           HomeAppBar(),
           Container(
-            height: 500,
+            // height: 900,
             padding: EdgeInsets.only(top: 15),
             decoration: BoxDecoration(
               color: Color(0xFFEDECF2),
@@ -41,7 +41,7 @@ class HomePage extends StatelessWidget {
                           Container(
                             margin: EdgeInsets.only(left: 5),
                             height: 50,
-                            width: 300,
+                            width: 200,
                             child: TextFormField(
                               decoration: InputDecoration(
                                 border: InputBorder.none,
