@@ -20,6 +20,7 @@ class ItemPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color(0xFFEDECF2),
       body: ListView(
+
         children: [
           ItemAppBar(),
           Padding(
