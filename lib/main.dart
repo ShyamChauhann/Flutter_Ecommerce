@@ -1,6 +1,7 @@
 import 'package:ecommerce_app/pages/CartPage.dart';
 import 'package:ecommerce_app/pages/HomePage.dart';
 import 'package:ecommerce_app/pages/ItemPage.dart';
+import 'package:ecommerce_app/pages/login_page.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: Colors.white,
       ),
       routes: {
-        "/": (context) => HomePage(),
+        "/": (context) => LoginPage(),
         "cartPage": (context) => CartPage(),
         "itemPage": (context) => ItemPage(),
       },
