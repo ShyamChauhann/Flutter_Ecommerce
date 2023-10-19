@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:ecommerce_app/pages/HomePage.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:ecommerce_app/auth_service.dart';
@@ -116,7 +117,9 @@ class _LoginPageState extends State<LoginPage> {
                           color: Colors.white70,
                         ),
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        HomePage();
+                      },
                     )
                   ],
                 ),
@@ -130,7 +133,9 @@ class _LoginPageState extends State<LoginPage> {
               MyButton(
                 myColor: myOrange,
                 buttonName: 'Sign In',
-                onPressedFunction: () {},
+                onPressedFunction: () {
+                  HomePage();
+                },
               ),
 
               const SizedBox(

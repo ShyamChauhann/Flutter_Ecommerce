@@ -17,9 +17,10 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: Colors.white,
       ),
       routes: {
-        "/": (context) => LoginPage(),
+        "/": (context) => HomePage(),
         "cartPage": (context) => CartPage(),
         "itemPage": (context) => ItemPage(),
+        "homePage":(context)=>HomePage(),
       },
     );
   }

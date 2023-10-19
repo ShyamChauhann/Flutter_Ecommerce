@@ -1,15 +1,18 @@
+import 'package:ecommerce_app/pages/HomePage.dart';
 import 'package:flutter/material.dart';
 
 class MyButton extends StatelessWidget {
   final Color myColor = const Color.fromRGBO(242, 102, 62, 1);
   final String buttonName = 'Sign In';
-  Function()? onPressedFunction = () {};
+  Function()? onPressedFunction = () {
+    HomePage();
+  };
   MyButton(
       {super.key,
-        required Color myColor,
-        required String buttonName,
-        required Function()? onPressedFunction,
-        TextInputType? textInputType});
+      required Color myColor,
+      required String buttonName,
+      required Function()? onPressedFunction,
+      TextInputType? textInputType});
 
   @override
   Widget build(BuildContext context) {
